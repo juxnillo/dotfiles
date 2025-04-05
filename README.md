@@ -4,8 +4,8 @@ Este repositorio contiene mis archivos de configuración para diversas herramien
 
 - **Bash**: Configuración de `.bashrc`.
 - **Zsh**: Configuración de `.zshrc`.
-- **Vim**: Configuración de `.vimrc` y plugins.
 - **Git**: Configuración global de `.gitconfig`.
+- **Kitty**: Configuracion Terminal Kitty `kitty`.
 
 ## Instalación
 
