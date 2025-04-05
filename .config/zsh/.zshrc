@@ -28,9 +28,6 @@ alias rmpak="flatpak uninstall"
 alias pak="flatpak install"
 alias lspak="flatpak list"
 
-#Git
-alias config="/usr/bin/git --git-dir=$HOME/repos/Wallpapers/wallpapers --work-tree=$HOME'"
-
 # Load and initialise completion system
 autoload -Uz compinit
 compinit
