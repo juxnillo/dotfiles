@@ -9,7 +9,7 @@ Este repositorio contiene mis archivos de configuración para diversas herramien
 
 ## Instalación
 
-Para instalar estos dotfiles en tu sistema, ejecuta el siguiente comando:
+Para copiar los archivos, ejecuta el siguiente comando:
 
 ```bash
 git clone https://github.com/juxnillo/dotfiles.git ~/dotfiles
