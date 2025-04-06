@@ -6,6 +6,7 @@ Este repositorio contiene mis archivos de configuración para diversas herramien
 - **Zsh**: Configuración de `.zshrc`.
 - **Git**: Configuración global de `.gitconfig`.
 - **Kitty**: Configuracion Terminal Kitty `kitty`.
+- **Fastfetch**: Configuracion de Fastfetch/neofetch `fastfetch`.
 
 ## Instalación
 
