@@ -6,8 +6,8 @@
       "newline": true,
       "segments": [
         {
-          "background": "#0c7bbb",
-          "foreground": "#ffffff",
+          "background": "#0F0F1A",
+          "foreground": "#9A5BFF",
           "leading_diamond": "\u256d\u2500\ue0b2",
           "properties": {
             "alpine": "\uf300",
@@ -31,16 +31,16 @@
           "type": "os"
         },
         {
-          "background": "#DA627D",
-          "foreground": "#ffffff",
+          "background": "#0F0F1A",
+          "foreground": "#00FFFF",
           "powerline_symbol": "\ue0b0",
           "style": "diamond",
-          "template": " 🏠  ",
+          "template": " /wan 󰍹 ",
           "type": "text"
         },
         {
-          "background": "#8a62da",
-          "foreground": "#ffffff",
+          "background": "#0F0F1A",
+          "foreground": "#9A5BFF",
           "powerline_symbol": "\ue0b0",
           "properties": {
             "style": "folder"
@@ -77,13 +77,13 @@
       "alignment": "right",
       "segments": [
         {
-          "foreground": "#81ff91",
+          "foreground": "#00FFFF",
           "style": "diamond",
           "template": "<#cc7eda> \u007C </><#7eb8da>RAM:</> {{ (div ((sub .PhysicalTotalMemory .PhysicalAvailableMemory)|float64) 1073741824.0) }}/{{ (div .PhysicalTotalMemory 1073741824.0) }}GB",
           "type": "sysinfo"
         },
         {
-          "foreground": "#81ff91",
+          "foreground": "#00FFFF",
           "properties": {
             "fetch_version": true
           },
@@ -94,24 +94,24 @@
         {
           "type": "php",
           "style": "powerline",
-          "foreground": "#81ff91",
+          "foreground": "#00FFFF",
           "template": "<#cc7eda> \u007C </><#7eb8da>\ue73d</> {{ .Full }}"
         },
         {
           "type": "npm",
           "style": "powerline",
-          "foreground": "#81ff91",
+          "foreground": "#00FFFF",
           "template": "<#cc7eda> \u007C </><#7eb8da>\ue71e </> {{ .Full }}"
         },
         {
           "type": "sysinfo",
           "style": "powerline",
-          "foreground": "#81ff91",
+          "foreground": "#00FFFF",
           "template": "<> </>"
         },
         {
-          "background": "#cecece",
-          "foreground": "#4b4b4b",
+          "background": "#0F0F1A",
+          "foreground": "#9A5BFF",
           "leading_diamond": "\ue0b2",
           "trailing_diamond": "\ue0b0",
           "properties": {
@@ -119,18 +119,18 @@
             "threshold": 150
           },
           "style": "diamond",
-          "template": "⌛  {{ .FormattedMs }} ",
+          "template": " 󰔟 {{ .FormattedMs }} ",
           "type": "executiontime"
         },
         {
-          "background": "#cecece",
-          "foreground": "#4b4b4b",
+          "background": "#0F0F1A",
+          "foreground": "#9A5BFF",
           "leading_diamond": "\ue0b2",
           "properties": {
             "time_format": "15:04:05"
           },
           "style": "diamond",
-          "template": "⏰  {{ .CurrentDate | date .Format }} ",
+          "template": " {{ .CurrentDate | date .Format }} ",
           "trailing_diamond": "\ue0b0",
           "type": "time"
         }
@@ -142,7 +142,7 @@
       "newline": true,
       "segments": [
         {
-          "foreground": "#0c7bbb",
+          "foreground": "#0F0F1A",
           "style": "plain",
           "template": "\u2570\u2500",
           "type": "text"
