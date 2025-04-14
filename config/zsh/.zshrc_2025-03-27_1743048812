@@ -1,0 +1,35 @@
+#Alias Pacman 
+alias update="sudo pacman -Syu"
+alias yeet="sudo pacman -Rns"
+alias pac="sudo pacman -S"
+alias pacls="sudo pacman -Q"
+alias pacyeet="sudo pacman -Rsn $(pacman -Qdtq)"
+alias upgrade="yay -Syu"
+alias yeeted="yay -Rns"
+alias aur="yay -S"
+
+#Archivos & procesos
+alias untar="tar -zxvf"
+alias edit="sudo nano"
+alias lobby="sudo rm -rf"
+alias fuckoff="pkill -u"
+alias reload="source ~/.config/zsh/.zshrc"
+
+#Flatpak 
+alias upak="flatpak update"
+alias rmpak="flatpak uninstall"
+alias pak="flatpak install"
+alias lspak="flatpak list"
+
+# Created by Zap installer
+plug "zsh-users/zsh-autosuggestions"
+plug "zsh-users/zsh-syntax-highlighting"
+
+# Load and initialise completion system
+autoload -Uz compinit
+compinit
+compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
+
+#Prompt
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/clean-detailed.omp.json)"
+# Themes (clean-detailed, atomic, tokyonight_storm, tokyo, easy-term) 
