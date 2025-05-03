@@ -28,8 +28,6 @@ alias rmpak="flatpak uninstall"
 alias pak="flatpak install"
 alias lspak="flatpak list"
 
-#Git
-alias config="/usr/bin/git --git-dir=$HOME/repos/Wallpapers/wallpapers --work-tree=$HOME'"
 
 # Load and initialise completion system
 autoload -Uz compinit
@@ -37,6 +35,6 @@ compinit
 compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 
 #Prompt
-eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/tokyo.omp.json)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/tokyo2.omp.json)"
 
 #Themes (clean-detailed, atomic, tokyonight_storm, tokyo, easy-term, gruvbox)
