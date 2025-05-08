@@ -37,6 +37,6 @@ compinit
 compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 
 #Prompt
-eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/tokyo.omp.json)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/clean-detailed.omp.json)"
 
 #Themes (clean-detailed, atomic, tokyonight_storm, tokyo, easy-term, gruvbox)
