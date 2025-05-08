@@ -40,3 +40,5 @@ compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/clean-detailed.omp.json)"
 
 #Themes (clean-detailed, atomic, tokyonight_storm, tokyo, easy-term, gruvbox)
+
+export PATH="$CARGO_HOME/bin:$PATH"
