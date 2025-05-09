@@ -11,6 +11,11 @@
       "break",
       {
           "type": "custom",
+          "format": "           鳥のように自由であれ",
+          "outputColor": "cyan"
+      },
+      {
+          "type": "custom",
           "format": "╔══════════════════════════════════════╗",
           "outputColor": "magenta"
       },
@@ -48,7 +53,7 @@
       "break",
       {
         "type": "title",
-        "key": " ",
+        "key": "           ",
         "keyColor": "cyan"
     },
       {
