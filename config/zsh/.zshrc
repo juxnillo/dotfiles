@@ -1,10 +1,13 @@
-# Created by Zap installer
+# Exports
+export PATH="$CARGO_HOME/bin:$PATH"
+
+# Plugins Zap
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
 plug "zsh-users/zsh-autosuggestions"
 plug "zap-zsh/supercharge"
 plug "zsh-users/zsh-syntax-highlighting"
 
-#Alias Pacman
+# Alias Pacman
 alias update="sudo pacman -Syu"
 alias yeet="sudo pacman -Rns"
 alias pac="sudo pacman -S"
@@ -14,31 +17,37 @@ alias upgrade="yay -Syu"
 alias yeeted="yay -Rns"
 alias aur="yay -S"
 
-#Archivos & procesos
+# Archivos & procesos
 alias untar="tar -zxvf"
-alias edit="sudo nano"
+alias edit="sudo nvim"
 alias lobby="sudo rm -rf"
 alias fuckoff="pkill -u"
 alias reload="source ~/.config/zsh/.zshrc"
 alias mk="sudo mkdir"
 
-#Flatpak
+# Flatpak
 alias upak="flatpak update"
 alias rmpak="flatpak uninstall"
 alias pak="flatpak install"
 alias lspak="flatpak list"
 
-#Git
+# Git
 alias config="/usr/bin/git --git-dir=$HOME/repos/Wallpapers/wallpapers --work-tree=$HOME'"
+alias add="git add -A"
+alias commit="git commit -m"
+alias push="git push"
+alias pull"git pull"
+
+# VPN
+alias vpnon="sudo wg-quick up proton"
+alias vpnoff="sudo wg-quick down proton"
 
 # Load and initialise completion system
 autoload -Uz compinit
 compinit
 compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 
-#Prompt
+# Prompt
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/clean-detailed.omp.json)"
+# Themes (clean-detailed, atomic, tokyonight_storm, tokyo, easy-term, gruvbox)
 
-#Themes (clean-detailed, atomic, tokyonight_storm, tokyo, easy-term, gruvbox)
-
-export PATH="$CARGO_HOME/bin:$PATH"
