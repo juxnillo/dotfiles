@@ -17,4 +17,5 @@ export WAKATIME_HOME="$XDG_CONFIG_HOME/wakatime"
 alias  wget="wget --hsts-file=$XDG_DATA_HOME/wget-hsts"
 export WINEPREFIX="$XDG_DATA_HOME/wine"
 export ZDOTDIR="$HOME/.config/zsh"
+export ZDOTDIR="$XDG_CONFIG_HOME"/zsh
 source "$ZDOTDIR"
