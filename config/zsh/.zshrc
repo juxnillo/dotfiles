@@ -1,6 +1,7 @@
 # Exports
 export PATH="$CARGO_HOME/bin:$PATH"
 export PATH="$PATH:/home/wan/.local/bin"
+
 # Plugins Zap
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
 plug "zsh-users/zsh-autosuggestions"
@@ -8,12 +9,14 @@ plug "zsh-users/zsh-syntax-highlighting"
 
 # Alias Pacman
 alias update="sudo pacman -Syu && yay -Syu"
-alias pacman="sudo pacman -S"
+alias pac="sudo pacman -S"
 alias yeet="sudo pacman -Rns"
 alias pacls="pacman -Q"
 alias aurls="pacman -Qm"
 alias aur="yay -S"
 alias yeeted="yay -Rns"
+alias orphan="pacman -Qdtq"
+alias killorphan="sudo pacman -Rns $(pacman -Qdtq)"
 
 # Archivos & procesos
 alias c="clear"
