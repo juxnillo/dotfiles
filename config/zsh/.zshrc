@@ -1,6 +1,6 @@
 # Exports
 export PATH="$CARGO_HOME/bin:$PATH"
-
+export PATH="$PATH:/home/wan/.local/bin"
 # Plugins Zap
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
 plug "zsh-users/zsh-autosuggestions"
