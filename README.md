@@ -1,16 +1,16 @@
-# Dotfiles de juxnillo
+# 🖥️ My Personal Dotfiles
 
-Este repositorio contiene mis archivos de configuración para diversas herramientas:
+## These are my config files for my linux system ⌨️
 
-- **Bash**: Configuración de `.bashrc`.
-- **Zsh**: Configuración de `.zshrc`.
-- **Kitty**: Configuracion Terminal Kitty `kitty`.
-- **Fastfetch**: Configuracion de Fastfetch/neofetch `fastfetch`.
-- **Ghostty**: Config of ghostty `ghostty`
+🧑🏻‍🔧 Currently working: 
+- *OhMyPosh* 
+- *Kitty*
+- *Ghostty*
+- *Zsh*
+- *Fastfetch*
+- *Wofi*
 
-## Instalación
-
-Para copiar los archivos, ejecuta el siguiente comando:
+### Thank you for using it 😄
 
 ```bash
 git clone https://github.com/juxnillo/dotfiles.git ~/dotfiles
