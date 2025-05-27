@@ -1,6 +1,8 @@
 show-icons=true
+prompt=
 hide-scroll=true
 allow-markup=true
 width=500
-height=400
-location=center
+height=440
+location=auto
+no_actions=true
