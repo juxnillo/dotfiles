@@ -29,7 +29,7 @@ alias fuckoff="pkill -u"
 alias reload="source ~/.config/zsh/.zshrc"
 alias mkdir="mkdir -pv"
 alias mount="mount |column -t"
-
+alias ..="cd .."
 
 # Flatpak
 alias upak="flatpak update"
