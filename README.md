@@ -9,6 +9,7 @@
 - *Zsh*
 - *Fastfetch*
 - *Wofi*
+- *Rofi*
 
 ### Thank you for using it 😄
 
