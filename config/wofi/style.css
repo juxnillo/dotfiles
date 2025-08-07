@@ -1,6 +1,6 @@
 window {
     background-color: rgba(22, 22, 24, 0.9);
-    border: 3px solid #d52c2c;
+    border: 3px solid #1B1B1D;
     border-radius: 16px;
     padding: 10px;
     font-family: Proxima Nova;
@@ -11,7 +11,7 @@ window {
     margin: 15px 15px 10px;
     padding: 5px;
     background-color: #373738;
-    border: 2px solid #d52c2c;
+    border: 2px solid #3E9CFE;
     border-radius: 20px;
     color: #ffffff;
 }
@@ -34,7 +34,7 @@ window {
     margin: 10px 15px;
     border: none;
     border-radius: 15px;
-    background: rgba(213, 44, 44, 0.4);
+    background: rgba(62, 156, 254, 1);
 }
 
 #text {
