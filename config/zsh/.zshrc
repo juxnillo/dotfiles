@@ -16,7 +16,7 @@ alias aurls="pacman -Qm"
 alias aur="yay -S"
 alias yeeted="yay -Rns"
 alias orphan="pacman -Qdtq"
-alias killorphan="sudo pacman -Rns $(pacman -Qdtq)"
+alias killorphan="sudo pacman -Qtdq | sudo pacman -Rns -"
 
 # Archivos & procesos
 alias c="clear"
@@ -62,6 +62,3 @@ eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/clean-detailed.omp.j
 
 # theFUCK
 eval $(thefuck --alias FUCK)
-
-
-
