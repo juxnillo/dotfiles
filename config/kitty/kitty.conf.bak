@@ -1,7 +1,7 @@
 # vim:fileencoding=utf-8:foldmethod=marker
 
 # BEGIN_KITTY_THEME
-# Paul Millr
+# Cyberpunk
 include current-theme.conf
 # END_KITTY_THEME
 
@@ -11,7 +11,7 @@ include current-theme.conf
 #: individual font faces and even specify special fonts for particular
 #: characters.
 
- font_family      0xProto Nerd Font
+ font_family      FiraCode Nerd Font Mono
 # bold_font        auto
 # italic_font      auto
 # bold_italic_font auto
@@ -2671,4 +2671,3 @@ background_blur 1
 
 dynamic_background_opacity yes
 confirm_os_window_close 0
-
