@@ -58,7 +58,7 @@ compinit
 compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 
 # Prompt Themes (clean-detailed, atomic, tokyonight_storm, tokyo, easy-term, gruvbox)
-eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/tokyonight_storm.omp.json)"
+eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/broski-theme.omp.json)"
 
 # theFUCK
 eval $(thefuck --alias FUCK)
