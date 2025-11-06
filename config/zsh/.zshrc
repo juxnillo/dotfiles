@@ -20,8 +20,11 @@ alias killorphan="sudo pacman -Qtdq | sudo pacman -Rns -"
 
 # Archivos & procesos
 alias c="clear"
-alias ls="ls --color=auto"
-alias l.="ls -d .* --color=auto"
+alias ls='eza --icons --color=always --group-directories-first'
+alias ll='eza -alF --icons --color=always --group-directories-first'
+alias la='eza -a --icons --color=always --group-directories-first'
+alias l='eza -F --icons --color=always --group-directories-first'
+alias l.='eza -a | grep -E "^\."'
 alias untar="tar -zxvf"
 alias edit="sudo nvim"
 alias lobby="sudo rm -rf"
