@@ -47,7 +47,7 @@ alias ga="git add"
 alias gaa="git add -A"
 alias gcmsg="git commit -m"
 alias gp="git push"
-alias gl"git pull"
+alias gl="git pull"
 
 # VPN
 alias vpnon="sudo wg-quick up proton"
