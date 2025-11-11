@@ -1,6 +1,7 @@
 # Exports
 export PATH="$CARGO_HOME/bin:$PATH"
 export PATH="$PATH:/home/wan/.local/bin"
+export EXA_COLORS="di=35:ln=92:ex93:*.rs=31"
 
 # Plugins Zap
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
@@ -33,6 +34,7 @@ alias reload="source ~/.config/zsh/.zshrc"
 alias mkdir="mkdir -pv"
 alias mount="mount |column -t"
 alias ..="cd .."
+alias ff="fastfetch"
 
 # Flatpak
 alias upak="flatpak update"
@@ -60,7 +62,7 @@ autoload -Uz compinit
 compinit
 compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
 
-# Prompt Themes (clean-detailed, atomic, tokyonight_storm, tokyo, easy-term, gruvbox)
+# Prompt Themes (clean-detailed, atomic, tokyonight_storm, tokyo, easy-term, gruvbox, broski)
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/broski-theme.omp.json)"
 
 # theFUCK
