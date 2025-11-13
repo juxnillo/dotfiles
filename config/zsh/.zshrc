@@ -1,5 +1,4 @@
 # Exports
-export PATH="$CARGO_HOME/bin:$PATH"
 export PATH="$PATH:/home/wan/.local/bin"
 export EXA_COLORS="di=35:ln=92:ex93:*.rs=31"
 
