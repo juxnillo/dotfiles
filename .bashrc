@@ -12,3 +12,4 @@ PS1='[\u@\h \W]\$ '
 exec zsh
 
 export PATH=$PATH:/home/wan/.spicetify
+export GNUPGHOME="$HOME/.local/share/gnupg"
