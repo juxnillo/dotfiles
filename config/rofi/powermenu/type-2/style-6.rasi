@@ -24,12 +24,12 @@ USE_BUTTONS=YES
 window {
     /* properties for window widget */
     transparency:                "real";
-    location:                    south;
-    anchor:                      south;
+    location:                    north;
+    anchor:                      north;
     fullscreen:                  false;
     width:                       500px;
     x-offset:                    0px;
-    y-offset:                    -15px;
+    y-offset:                    4px;
 
     /* properties for all widgets */
     enabled:                     true;
