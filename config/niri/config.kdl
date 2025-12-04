@@ -64,7 +64,7 @@ layout {
     default-column-width {}
 
     focus-ring {
-        on
+        off
         width 1.5
         active-color "#A083F6"
         inactive-color "#505050"
@@ -97,10 +97,9 @@ overview {
 hotkey-overlay {
     skip-at-startup
 }
-
+// Autostart
 spawn-at-startup "swww-daemon"
-spawn-at-startup "swwws-daemon"
-spawn-at-startup "waybar"
+spawn-at-startup "qs" "-c" "noctalia-shell"
 spawn-at-startup "~/.config/niri/scripts/start-gnome-keyring.sh"
 screenshot-path "~/Imágenes/Capturas de pantalla/Captura de pantalla %Y-%m-%d %H-%M-%S.png"
 
@@ -123,15 +122,20 @@ window-rule {
 }
 
 window-rule {
-    geometry-corner-radius 16
+    geometry-corner-radius 20
     clip-to-geometry true
     draw-border-with-background false
+}
+
+layer-rule {
+  match namespace="^noctalia-overview*"
+  place-within-backdrop true
 }
 
 binds {
 // Binds Personales
     Mod+A { spawn "kitty"; }
-    Mod+D { spawn "~/.config/rofi/launchers/type-2/launcher.sh"; }
+    Mod+D { spawn-sh "qs -c noctalia-shell ipc call launcher toggle" ; }
     Mod+Z { spawn "~/.config/rofi/powermenu/type-2/powermenu.sh"; }
     Super+Alt+L { spawn "hyprlock"; }
 
