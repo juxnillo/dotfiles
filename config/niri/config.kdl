@@ -1,3 +1,15 @@
+
+// ░███    ░██ ░██████░█████████  ░██████
+// ░████   ░██   ░██  ░██     ░██   ░██
+// ░██░██  ░██   ░██  ░██     ░██   ░██
+// ░██ ░██ ░██   ░██  ░█████████    ░██
+// ░██  ░██░██   ░██  ░██   ░██     ░██
+// ░██   ░████   ░██  ░██    ░██    ░██
+// ░██    ░███ ░██████░██     ░██ ░██████
+
+
+// Config
+
 prefer-no-csd
 
 output "DP-3" {
@@ -98,7 +110,7 @@ hotkey-overlay {
     skip-at-startup
 }
 // Autostart
-spawn-at-startup "swww-daemon"
+spawn-at-startup "~/.config/niri/scripts/cloud-flight_amd64"
 spawn-at-startup "qs" "-c" "noctalia-shell"
 spawn-at-startup "~/.config/niri/scripts/start-gnome-keyring.sh"
 screenshot-path "~/Imágenes/Capturas de pantalla/Captura de pantalla %Y-%m-%d %H-%M-%S.png"
@@ -136,8 +148,8 @@ binds {
 // Binds Personales
     Mod+A { spawn "kitty"; }
     Mod+D { spawn-sh "qs -c noctalia-shell ipc call launcher toggle" ; }
+    Mod+S { spawn-sh "qs -c noctalia-shell ipc call settings toggle" ; }
     Mod+Z { spawn "~/.config/rofi/powermenu/type-2/powermenu.sh"; }
-    Super+Alt+L { spawn "hyprlock"; }
 
 // Niri Actions
     Mod+W repeat=false { toggle-overview; }
@@ -279,3 +291,4 @@ binds {
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
 }
+include "./noctalia.kdl"

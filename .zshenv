@@ -6,7 +6,6 @@ export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
 export HISTFILE="$XDG_STATE_HOME/bash/history"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export PATH="$CARGO_HOME/bin:$PATH"
-export DOTNET_CLI_HOME="$XDG_DATA_HOME/dotnet"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
 export GOPATH="$XDG_DATA_HOME"/go
 export PATH="$GOPATH/bin:$PATH"
@@ -19,6 +18,5 @@ export NPM_CONFIG_INIT_MODULE="$XDG_CONFIG_HOME/npm/config/npm-init.js"
 export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/npm"
 export NPM_CONFIG_TMP="$XDG_RUNTIME_DIR/npm"
 export ZDOTDIR="$XDG_CONFIG_HOME"/zsh
-export $XDG_CONFIG_HOME/vscode
 source "$ZDOTDIR"
 alias  wget="wget --hsts-file=$XDG_DATA_HOME/wget-hsts"

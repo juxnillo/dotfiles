@@ -2,7 +2,8 @@
 
 ## These are my config files for my linux system ⌨️
 
-🧑🏻‍🔧 Currently working: 
+🧑🏻‍🔧 Currently working:
+
 - *OhMyPosh* 
 - *Kitty*
 - *Ghostty*
@@ -10,6 +11,7 @@
 - *Fastfetch*
 - *Wofi*
 - *Rofi*
+- *Niri*
 
 ### Thank you for using it 😄
 
