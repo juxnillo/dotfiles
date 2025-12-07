@@ -30,6 +30,8 @@ output "HDMI-A-1" {
 environment {
 	XDG_CURRENT_DESKTOP "niri"
 	XDG_SESSION_TYPE "wayland"
+    MOZ_ENABLE_WAYLAND "1"
+    QT_QPA_PLATFORM "wayland"
 }
 
 input {
@@ -65,7 +67,7 @@ cursor {
 layout {
     gaps 5
     center-focused-column "never"
-    always-center-single-column
+    // always-center-single-column
 
     preset-column-widths {
         proportion 0.33333
@@ -76,7 +78,7 @@ layout {
     default-column-width {}
 
     focus-ring {
-        off
+        on
         width 1.5
         active-color "#A083F6"
         inactive-color "#505050"
@@ -113,6 +115,8 @@ hotkey-overlay {
 spawn-at-startup "~/.config/niri/scripts/cloud-flight_amd64"
 spawn-at-startup "qs" "-c" "noctalia-shell"
 spawn-at-startup "~/.config/niri/scripts/start-gnome-keyring.sh"
+
+// Path ScreenShot
 screenshot-path "~/Imágenes/Capturas de pantalla/Captura de pantalla %Y-%m-%d %H-%M-%S.png"
 
 animations {
@@ -142,6 +146,18 @@ window-rule {
 layer-rule {
   match namespace="^noctalia-overview*"
   place-within-backdrop true
+}
+
+layer-rule {
+    match namespace="noctalia-shell"
+    opacity 0.5
+}
+
+// Gestos
+gestures {
+    hot-corners{
+        off
+    }
 }
 
 binds {
