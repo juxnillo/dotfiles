@@ -66,3 +66,5 @@ eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/broski-theme.omp.jso
 
 # theFUCK
 eval $(thefuck --alias FUCK)
+
+export PATH=$PATH:/home/wan/.spicetify

@@ -12,19 +12,22 @@
 
 prefer-no-csd
 
+//Main Monitor
 output "DP-3" {
     mode "1920x1080@144.000"
     scale 1
     transform "normal"
-    position x=0 y=0
+    position x=1920 y=0
     variable-refresh-rate // on-demand=true
     focus-at-startup
 }
+
+//Second Monitor
 output "HDMI-A-1" {
     mode "1920x1080@60.000"
     scale 1
     transform "normal"
-    position x=1280 y=0
+    position x=0 y=0
 }
 
 environment {
@@ -111,9 +114,9 @@ overview {
 hotkey-overlay {
     skip-at-startup
 }
+
 // Autostart
 spawn-at-startup "~/.config/niri/scripts/cloud-flight_amd64"
-spawn-at-startup "qs" "-c" "noctalia-shell"
 spawn-at-startup "~/.config/niri/scripts/start-gnome-keyring.sh"
 
 // Path ScreenShot
@@ -165,13 +168,12 @@ binds {
     Mod+A { spawn "kitty"; }
     Mod+D { spawn-sh "qs -c noctalia-shell ipc call launcher toggle" ; }
     Mod+S { spawn-sh "qs -c noctalia-shell ipc call settings toggle" ; }
-    Mod+Z { spawn "~/.config/rofi/powermenu/type-2/powermenu.sh"; }
+    Mod+E { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle" ; }
 
 // Niri Actions
     Mod+W repeat=false { toggle-overview; }
     Mod+Q repeat=false { close-window; }
     Mod+T {toggle-column-tabbed-display; }
-    F12 repeat=false { spawn-sh "swwws-cli next"; }
 
     Mod+Shift+E { quit; }
     Ctrl+Alt+Delete { quit; }
@@ -307,4 +309,3 @@ binds {
     Mod+Escape allow-inhibiting=false { toggle-keyboard-shortcuts-inhibit; }
 
 }
-include "./noctalia.kdl"

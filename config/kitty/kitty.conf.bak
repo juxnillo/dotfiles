@@ -6,8 +6,8 @@
 # ╚═╝  ╚═╝╚═╝   ╚═╝      ╚═╝      ╚═╝
 
 
-# Kitty Theme Noctalia
-    include current-theme.conf
+# Kitty Theme
+    # include current-theme.conf
 
 # Fonts
     font_family      FiraCode Nerd Font Mono
