@@ -116,8 +116,9 @@ hotkey-overlay {
 }
 
 // Autostart
-spawn-at-startup "~/.config/niri/scripts/cloud-flight_amd64"
-spawn-at-startup "~/.config/niri/scripts/start-gnome-keyring.sh"
+spawn-at-startup "gnome-keyring-daemon"
+spawn-at-startup "dms run"
+spawn-at-startup "/home/wan/.config/niri/scripts/cloud-flight_amd64"
 
 // Path ScreenShot
 screenshot-path "~/Imágenes/Capturas de pantalla/Captura de pantalla %Y-%m-%d %H-%M-%S.png"
@@ -146,16 +147,6 @@ window-rule {
     draw-border-with-background false
 }
 
-layer-rule {
-  match namespace="^noctalia-overview*"
-  place-within-backdrop true
-}
-
-layer-rule {
-    match namespace="noctalia-shell"
-    opacity 0.5
-}
-
 // Gestos
 gestures {
     hot-corners{
@@ -166,9 +157,14 @@ gestures {
 binds {
 // Binds Personales
     Mod+A { spawn "kitty"; }
-    Mod+D { spawn-sh "qs -c noctalia-shell ipc call launcher toggle" ; }
-    Mod+S { spawn-sh "qs -c noctalia-shell ipc call settings toggle" ; }
-    Mod+E { spawn-sh "qs -c noctalia-shell ipc call sessionMenu toggle" ; }
+    Mod+D { spawn-sh "dms ipc call spotlight toggle" ; }
+    Mod+E { spawn-sh "dms ipc call powermenu toggle" ; }
+    Mod+S { spawn-sh "dms ipc call settings toggle" ; }
+    Mod+M { spawn-sh "dms ipc call wallpaper next" ; }
+    Mod+1 { spawn "brave" ; }
+    Mod+2 { spawn-sh "kitty nvim" ; }
+    Mod+3 { spawn "zeditor" ; }
+    Mod+4 { spawn "spotify"; }
 
 // Niri Actions
     Mod+W repeat=false { toggle-overview; }
@@ -195,18 +191,6 @@ binds {
     Mod+L     { focus-column-right; }
     Mod+Home { focus-column-first; }
     Mod+End  { focus-column-last; }
-
-    // Workspace
-    Mod+1 { focus-workspace 1; }
-    Mod+2 { focus-workspace 2; }
-    Mod+3 { focus-workspace 3; }
-    Mod+4 { focus-workspace 4; }
-    Mod+5 { focus-workspace 5; }
-    Mod+6 { focus-workspace 6; }
-    Mod+7 { focus-workspace 7; }
-    Mod+8 { focus-workspace 8; }
-    Mod+9 { focus-workspace 9; }
-
     Mod+Page_Down      { focus-workspace-down; }
     Mod+Page_Up        { focus-workspace-up; }
 

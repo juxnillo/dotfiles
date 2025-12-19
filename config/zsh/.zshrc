@@ -27,7 +27,7 @@ alias l='eza -F --icons --color=always --group-directories-first'
 alias l.='eza -a | grep -E "^\."'
 alias untar="tar -zxvf"
 alias edit="sudo nvim"
-alias lobby="sudo rm -rf"
+alias lobby="rm -rf"
 alias fuckoff="pkill -u"
 alias reload="source ~/.config/zsh/.zshrc"
 alias mkdir="mkdir -pv"
