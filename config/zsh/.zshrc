@@ -67,4 +67,7 @@ eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/broski-theme.omp.jso
 # theFUCK
 eval $(thefuck --alias FUCK)
 
+#Spicetify Update
+
+alias spiceupdate="spicetify update && spicetify restore && spicetify backup && spicetify backup apply" 
 export PATH=$PATH:/home/wan/.spicetify

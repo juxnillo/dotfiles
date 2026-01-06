@@ -68,32 +68,34 @@ cursor {
 }
 
 layout {
-    gaps 5
-    center-focused-column "never"
+    gaps 6
+    center-focused-column "on-overflow"
     // always-center-single-column
 
     preset-column-widths {
-        proportion 0.33333
         proportion 0.5
-        proportion 0.66667
+        proportion 1.0
     }
 
-    default-column-width {}
+    default-column-width {
+        proportion 1.0
+    }
 
     focus-ring {
-        on
-        width 1.5
+        off
+        width 0.5
         active-color "#A083F6"
         inactive-color "#505050"
-        // active-gradient from="#80c8ff" to="#c7ff7f" angle=45
+        active-gradient from="#80adf4" to="#a083f6" angle=45
         // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
     }
 
     border {
-        off
-        width 0
+        on
+        width 0.5
         active-color "#ffc87f"
         inactive-color "#505050"
+        active-gradient from="#80adf4" to="#a083f6" angle=45
         // active-gradient from="#e5989b" to="#ffb4a2" angle=45 relative-to="workspace-view" in="oklch longer hue"
         // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
     }
@@ -107,8 +109,8 @@ layout {
 }
 
 overview {
-    zoom 0.50
-    backdrop-color "#282828"
+    zoom 0.70
+    backdrop-color "#1e1e2e"
 }
 
 hotkey-overlay {
@@ -116,6 +118,7 @@ hotkey-overlay {
 }
 
 // Autostart
+spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "gnome-keyring-daemon"
 spawn-at-startup "dms run"
 spawn-at-startup "/home/wan/.config/niri/scripts/cloud-flight_amd64"
@@ -142,7 +145,7 @@ window-rule {
 }
 
 window-rule {
-    geometry-corner-radius 20
+    geometry-corner-radius 9
     clip-to-geometry true
     draw-border-with-background false
 }
@@ -159,9 +162,7 @@ binds {
     Mod+A { spawn "kitty"; }
     Mod+D { spawn-sh "dms ipc call spotlight toggle" ; }
     Mod+E { spawn-sh "dms ipc call powermenu toggle" ; }
-    Mod+S { spawn-sh "dms ipc call settings toggle" ; }
-    Mod+M { spawn-sh "dms ipc call wallpaper next" ; }
-    Mod+1 { spawn "brave" ; }
+    Mod+1 { spawn "zen-browser" ; }
     Mod+2 { spawn-sh "kitty nvim" ; }
     Mod+3 { spawn "zeditor" ; }
     Mod+4 { spawn "spotify"; }

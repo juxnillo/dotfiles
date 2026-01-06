@@ -28,7 +28,7 @@
           "style": "plain",
           "background": "transparent",
           "foreground": "p:terminal-blue",
-          "template": "\u279C "
+          "template": " \ued35 {{ .UserName }} "
         },
         {
           "type": "path",
@@ -37,7 +37,16 @@
           "properties": {
             "style": "folder"
           },
-          "template": "<b>{{ .Path }}</b> <p:light-sky-blue>\uD83E\uDE90 </>"
+          "template": "\uf07b {{ .PWD }} \uD83E\uDE90</>"
+        },
+        {
+          "type": "command",
+          "style": "plain",
+          "foreground": "p:white-blue",
+          "properties": {
+            "command": "date +%H:%M",
+            "shell": "bash"
+          }
         },
         {
           "type": "git",
@@ -49,17 +58,17 @@
             "{{ if gt .Ahead 0 }}p:terminal-blue{{ end }}",
             "{{ if gt .Behind 0 }}p:celeste-blue{{ end }}"
           ],
-          "template": "({{ .HEAD}})",
+          "template": "({{ .HEAD }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}) ",
           "properties": {
             "fetch_status": true,
-            "branch_icon": "\uf418 "
+            "branch_icon": "\uf126 "
           }
         },
         {
           "type": "status",
           "style": "plain",
           "foreground": "p:terminal-red",
-          "template": " \uf00d"
+          "template": "\uf00d"
         }
       ],
       "type": "prompt"
@@ -103,15 +112,6 @@
           "style": "plain",
           "foreground": "p:light-sky-blue",
           "template": "\uFCD1 {{ .Full}}"
-        },
-        {
-          "type": "command",
-          "style": "plain",
-          "foreground": "p:white-blue",
-          "properties": {
-            "command": "git log --pretty=format:%cr -1 || date +%H:%M:%S",
-            "shell": "bash"
-          }
         }
       ],
       "type": "prompt"
@@ -123,7 +123,7 @@
         {
           "foreground": "p:pistachio-green",
           "style": "plain",
-          "template": "\u276F",
+          "template": " \u276F",
           "type": "text"
         }
       ],
@@ -133,12 +133,12 @@
   "secondary_prompt": {
     "background": "transparent",
     "foreground": "p:terminal-blue",
-    "template": "\u279c "
+    "template": "\ue602 "
   },
   "transient_prompt": {
     "background": "p:t-background",
     "foreground": "p:terminal-blue",
-    "template": "\u279c "
+    "template": "\ue602 "
   },
   "final_space": true,
   "version": 3,
