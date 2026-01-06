@@ -40,13 +40,13 @@
           "template": "\uf07b {{ .PWD }} \uD83E\uDE90</>"
         },
         {
-          "type": "command",
-          "style": "plain",
-          "foreground": "p:white-blue",
-          "properties": {
-            "command": "date +%H:%M",
-            "shell": "bash"
-          }
+          "options": {
+            "time_format": "15:04"
+          },
+          "style": "powerline",
+          "powerline_symbol": "",
+          "template": " </>{{ .CurrentDate | date .Format }} ",
+          "type": "time"
         },
         {
           "type": "git",
