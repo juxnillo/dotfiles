@@ -19,4 +19,3 @@ export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/npm"
 export NPM_CONFIG_TMP="$XDG_RUNTIME_DIR/npm"
 export ZDOTDIR="$XDG_CONFIG_HOME"/zsh
 source "$ZDOTDIR"
-alias  wget="wget --hsts-file=$XDG_DATA_HOME/wget-hsts"

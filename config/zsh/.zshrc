@@ -14,7 +14,6 @@ alias yeet="sudo pacman -Rns"
 alias pacls="pacman -Q"
 alias aurls="pacman -Qm"
 alias aur="yay -S"
-alias yeeted="yay -Rns"
 alias orphan="pacman -Qdtq"
 alias killorphan="sudo pacman -Qtdq | sudo pacman -Rns -"
 
@@ -33,7 +32,7 @@ alias reload="source ~/.config/zsh/.zshrc"
 alias mkdir="mkdir -pv"
 alias mount="mount |column -t"
 alias ..="cd .."
-alias ff="fastfetch"
+alias fetch="fastfetch"
 
 # Flatpak
 alias upak="flatpak update"
@@ -67,7 +66,10 @@ eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/broski-theme.omp.jso
 # theFUCK
 eval $(thefuck --alias FUCK)
 
-#Spicetify Update
+# Spicetify Update
 
 alias spiceupdate="spicetify update && spicetify restore && spicetify backup && spicetify backup apply" 
 export PATH=$PATH:/home/wan/.spicetify
+
+# WGET
+alias  wget="wget --hsts-file=$XDG_DATA_HOME/wget-hsts"
