@@ -136,7 +136,7 @@
     "template": " \u276F "
   },
   "transient_prompt": {
-    "background": "p:t-background",
+    "background": "transparent",
     "foreground": "p:terminal-blue",
     "template": " \u276F "
   },
