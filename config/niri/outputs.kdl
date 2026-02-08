@@ -1,5 +1,5 @@
 //Main Monitor
-output "DP-2" {
+output "DP-3" {
     mode "1920x1080@144.000"
     scale 1
     transform "normal"

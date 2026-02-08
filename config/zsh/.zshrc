@@ -68,7 +68,7 @@ eval $(thefuck --alias FUCK)
 
 # Spicetify Update
 
-alias spiceupdate="spicetify update && spicetify restore && spicetify backup && spicetify backup apply" 
+alias spiceupdate="spicetify update && spicetify restore && spicetify backup && spicetify backup apply"
 export PATH=$PATH:/home/wan/.spicetify
 
 # WGET

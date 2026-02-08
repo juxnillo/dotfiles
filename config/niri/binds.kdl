@@ -3,7 +3,7 @@ binds {
     Mod+A { spawn "kitty"; }
     Mod+D { spawn-sh "dms ipc call spotlight toggle" ; }
     Mod+E { spawn-sh "dms ipc call powermenu toggle" ; }
-    Mod+1 { spawn "zen-browser" ; }
+    Mod+1 { spawn "helium-browser" ; }
     Mod+2 { spawn-sh "kitty nvim" ; }
     Mod+3 { spawn "zeditor" ; }
     Mod+4 { spawn-sh "kitty fresh" ; }
