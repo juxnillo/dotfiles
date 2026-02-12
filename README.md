@@ -10,7 +10,6 @@
 - *Zsh*
 - *Fastfetch*
 - *Wofi*
-- *Rofi*
 - *Niri*
 
 ### Thank you for using it 😄
