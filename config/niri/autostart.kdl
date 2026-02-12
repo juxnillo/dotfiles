@@ -1,5 +1,6 @@
 // Autostart
 spawn-at-startup "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1"
 spawn-at-startup "gnome-keyring-daemon"
+spawn-at-startup "xwayland-satellite"
 spawn-at-startup "dms run"
 spawn-at-startup "/home/wan/.config/niri/scripts/cloud-flight_amd64"

@@ -22,10 +22,12 @@ include "autostart.kdl"
 include "binds.kdl"
 
 environment {
-	XDG_CURRENT_DESKTOP "niri"
-	XDG_SESSION_TYPE "wayland"
+    DISPLAY ":0"
+    XDG_CURRENT_DESKTOP "niri"
+    XDG_SESSION_TYPE "wayland"
     MOZ_ENABLE_WAYLAND "1"
     QT_QPA_PLATFORM "wayland"
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
 }
 
 input {
