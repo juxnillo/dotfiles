@@ -12,7 +12,7 @@
 - *Wofi*
 - *Niri*
 
-### Thank you for using it 😄
+**Thank you for using it 😄**
 
 ```bash
 git clone https://github.com/juxnillo/dotfiles.git ~/dotfiles
