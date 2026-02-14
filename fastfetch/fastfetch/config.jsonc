@@ -1,0 +1,124 @@
+// ███████╗ █████╗ ███████╗████████╗███████╗███████╗████████╗ ██████╗██╗  ██╗
+// ██╔════╝██╔══██╗██╔════╝╚══██╔══╝██╔════╝██╔════╝╚══██╔══╝██╔════╝██║  ██║
+// █████╗  ███████║███████╗   ██║   █████╗  █████╗     ██║   ██║     ███████║
+// ██╔══╝  ██╔══██║╚════██║   ██║   ██╔══╝  ██╔══╝     ██║   ██║     ██╔══██║
+// ██║     ██║  ██║███████║   ██║   ██║     ███████╗   ██║   ╚██████╗██║  ██║
+// ╚═╝     ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝     ╚══════╝   ╚═╝    ╚═════╝╚═╝  ╚═╝
+
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "auto",
+    "source": "$HOME/.config/fastfetch/pngs/manpika.png",
+    "position": "left",
+    "height": 15,
+    "width": 30,
+    "padding": {
+      "top": 1,
+      "left": 1,
+      "right": 3,
+    },
+    "color": { "1": "#7AA2F7" },
+  },
+  "display": {
+    "separator": "  ",
+    "size": {
+      "maxPrefix": "MB",
+      "ndigits": 2,
+    },
+  },
+
+  "modules": [
+    "break",
+    {
+      "type": "custom",
+      "format": "             \u001b[38;2;201;183;210m鳥のように自由であれ",
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;125;79;162m● ━ \u001b[0m𝗦ystem \u001b[38;2;125;79;162m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ●\u001b[0m",
+    },
+    {
+      "type": "cpu",
+      "key": "  ├ 󰻠 cpu",
+      "showPeCoreCount": true,
+      "format":"{1}",
+      "keyColor": "#8AD1E3",
+    },
+    {
+      "type": "gpu",
+      "key": "  ├ 󰍛 gpu",
+      "keyColor": "#8AD1E3",
+      "format": "{name}",
+    },
+    {
+      "type": "memory",
+      "key": "  └  memory",
+      "keyColor": "#8AD1E3",
+      "format": "{used} / {total} ({percentage})",
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;125;79;162m● ━ \u001b[0m𝗗istro \u001b[38;2;125;79;162m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ●\u001b[0m",
+    },
+    {
+      "type": "os",
+      "key": "  ├  os",
+      "keyColor": "#8AD1E3",
+      "format": "{name}",
+    },
+    {
+      "type": "kernel",
+      "key": "  ├  kernel",
+      "keyColor": "#8AD1E3",
+      "format": "{sysname} {release}",
+    },
+    {
+      "type": "wm",
+      "key": "  ├ 󰍺 wm",
+      "keyColor": "#8AD1E3",
+      "format": "{pretty-name} {version}",
+    },
+    {
+      "type": "packages",
+      "key": "  ├ 󰏖 pkgs",
+      "keyColor": "#8AD1E3",
+      "format":"{pacman} (pacman)",
+    },
+    {
+      "type": "shell",
+      "key": "  ├  shell",
+      "keyColor": "#8AD1E3",
+      "format": "{pretty-name} {version}",
+    },
+    {
+      "type": "terminal",
+      "key": "  ├  terminal",
+      "keyColor": "#8AD1E3",
+      "format":"{pretty-name} {version}",
+    },
+    {
+      "type": "command",
+      "key": "  ├  age",
+      "keyColor": "#8AD1E3",
+      "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days",
+      "format": "{result}",
+    },
+    {
+      "type": "uptime",
+      "key": "  └ 󰃰 uptime",
+      "keyColor": "#8AD1E3",
+      "format": "{formatted}",
+    },
+    {
+      "type": "custom",
+      "format": "\u001b[38;2;125;79;162m● ━ \u001b[0mColors \u001b[38;2;125;79;162m━━━━━━━━━━━━━━━━ \u001b[0m    󰬆 \u001b[38;2;125;79;162m━━━━━━ ●",
+    },
+    {
+        "type": "colors",
+        "key": "  └ ",
+        "keyColor": "#8AD1E3",
+        "symbol": "circle",
+    },
+  ],
+}
