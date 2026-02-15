@@ -1,3 +1,4 @@
 # Archivos que cambian constantemente
-config/zsh/.zcompdump
-config/zsh/.zsh_history
+.config/zsh/.zcompdump
+.config/zsh/.zsh_history
+.config/nvim/lazy-lock.json
