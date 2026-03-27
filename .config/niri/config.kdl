@@ -20,6 +20,7 @@ include "dms/colors.kdl"
 include "layout.kdl"
 include "autostart.kdl"
 include "binds.kdl"
+//include "animations.kdl"
 
 environment {
     DISPLAY ":0"
