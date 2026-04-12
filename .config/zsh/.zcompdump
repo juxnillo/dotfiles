@@ -1,4 +1,4 @@
-#files: 863	version: 5.9
+#files: 864	version: 5.9
 
 _comps=(
 '-' '_precommand'
@@ -263,7 +263,6 @@ _comps=(
 'dmake' '_make'
 'dmesg' '_dmesg'
 'dmidecode' '_dmidecode'
-'dms' '_dms'
 'doas' '_doas'
 'docker' '_docker'
 'domainname' '_yp'
@@ -761,6 +760,7 @@ _comps=(
 'mencal' '_mencal'
 'mere' '_mere'
 'merge' '_rcs'
+'meson' '_meson'
 'metaflac' '_flac'
 'mformat' '_mtools'
 'mgv' '_pspdf'
@@ -1709,11 +1709,11 @@ bindkey '^[~' _bash_complete-word
 
 autoload -Uz _bootctl _bun _busctl _bwrap _cargo \
             _checkupdates _coredumpctl _cpu-x _ctr _curl \
-            _dkms _dms _docker _eza _fastfetch \
-            _fd _firewalld _flatpak _fuzzel _glow \
-            _hostnamectl _img2sixel _insmod _journalctl _kernel-install \
-            _keyring _kitty _localectl _loginctl _lsmod \
-            _luarocks _luarocks-admin _machinectl _mkinitcpio _mpv \
+            _dkms _docker _eza _fastfetch _fd \
+            _firewalld _flatpak _fuzzel _glow _hostnamectl \
+            _img2sixel _insmod _journalctl _kernel-install _keyring \
+            _kitty _localectl _loginctl _lsmod _luarocks \
+            _luarocks-admin _machinectl _meson _mkinitcpio _mpv \
             _networkctl _ninja _niri _oomctl _opencode \
             _p11-kit _paccache _pacdiff _paclist _paclog-pkglist \
             _pacman _pacscripts _pacsearch _pacsort _pactree \
