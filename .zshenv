@@ -7,7 +7,7 @@ export HISTFILE="$XDG_STATE_HOME/bash/history"
 export CARGO_HOME="$XDG_DATA_HOME/cargo"
 export PATH="$CARGO_HOME/bin:$PATH"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
-export GOPATH="$XDG_DATA_HOME"/go
+export GOPATH="$XDG_DATA_HOME/go"
 export PATH="$GOPATH/bin:$PATH"
 export XCURSOR_PATH="/usr/share/icons:$XDG_DATA_HOME/icons"
 export WINEPREFIX="$XDG_DATA_HOME/wine"
@@ -17,6 +17,6 @@ export WAKATIME_HOME="$XDG_CONFIG_HOME/wakatime"
 export NPM_CONFIG_INIT_MODULE="$XDG_CONFIG_HOME/npm/config/npm-init.js"
 export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/npm"
 export NPM_CONFIG_TMP="$XDG_RUNTIME_DIR/npm"
-export ZDOTDIR="$XDG_CONFIG_HOME"/zsh
-export NUGET_PACKAGES="$XDG_CACHE_HOME"/NuGetPackages
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+export NUGET_PACKAGES="$XDG_CACHE_HOME/NuGetPackages"
 source "$ZDOTDIR"
