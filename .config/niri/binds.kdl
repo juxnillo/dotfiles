@@ -8,8 +8,13 @@ binds {
     Mod+3 { spawn "zeditor" ; }
     Mod+4 { spawn-sh "kitty fresh" ; }
 
+//WallpaperCarrousel
+    Mod+W { spawn "dms" "ipc" "wallpaperCarousel" "toggle"; }
+    Mod+K { spawn "dms" "ipc" "wallpaperCarousel" "cycleNext"; }
+    Mod+J { spawn "dms" "ipc" "wallpaperCarousel" "cyclePrevious"; }
+
 // Niri Actions
-    Mod+W repeat=false { toggle-overview; }
+    Mod+S repeat=false { toggle-overview; }
     Mod+Q repeat=false { close-window; }
     Mod+T {toggle-column-tabbed-display; }
 
@@ -27,10 +32,6 @@ binds {
     Mod+Down  { focus-window-down; }
     Mod+Up    { focus-window-up; }
     Mod+Right { focus-column-right; }
-    Mod+H     { focus-column-left; }
-    Mod+J     { focus-window-down; }
-    Mod+K     { focus-window-up; }
-    Mod+L     { focus-column-right; }
     Mod+Home { focus-column-first; }
     Mod+End  { focus-column-last; }
     Mod+Page_Down      { focus-workspace-down; }
