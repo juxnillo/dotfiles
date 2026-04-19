@@ -6,6 +6,7 @@ export EXA_COLORS="di=35:ln=92:ex93:*.rs=31"
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
 plug "zsh-users/zsh-autosuggestions"
 plug "zsh-users/zsh-syntax-highlighting"
+plug "zsh-users/zsh-history-substring-search"
 
 # Alias Pacman
 alias update="sudo pacman -Syu && paru -Syu"
@@ -72,3 +73,10 @@ export PATH=$PATH:/home/wan/.spicetify
 
 # WGET
 alias  wget="wget --hsts-file=$XDG_DATA_HOME/wget-hsts"
+
+# Histfile config
+export HISTFILE="$XDG_CONFIG_HOME/zsh/.zsh_history"
+export HISTSIZE=10000
+export SAVEHIST=10000
+setopt EXTENDED_HISTORY
+setopt INC_APPEND_HISTORY
