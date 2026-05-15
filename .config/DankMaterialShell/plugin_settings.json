@@ -1,0 +1,85 @@
+{
+  "linuxWallpaperEngine": {
+    "enabled": false,
+    "monitorScenes": {
+      "DP-3": "1661372823",
+      "HDMI-A-1": "3100052627"
+    },
+    "generateStaticWallpaper": false,
+    "sceneSettings": {
+      "1133318910": {
+        "fps": 30
+      },
+      "1415834125": {
+        "silent": true,
+        "fps": 30
+      },
+      "1635451189": {
+        "silent": false,
+        "volume": 38
+      },
+      "1640439012": {
+        "scaling": "stretch"
+      },
+      "1661372823": {
+        "fps": 60,
+        "disableMouse": true,
+        "silent": false
+      },
+      "1774004342": {
+        "scaling": "default",
+        "fps": 60,
+        "disableMouse": true
+      },
+      "2134765860": {
+        "silent": true
+      },
+      "2217849913": {
+        "fps": 60,
+        "silent": false,
+        "volume": 54,
+        "disableParticles": false,
+        "disableMouse": true
+      },
+      "2388299037": {
+        "fps": 29
+      },
+      "2407172811": {
+        "silent": true
+      },
+      "2962360286": {
+        "disableParallax": false,
+        "disableParticles": false,
+        "fps": 60,
+        "noFullscreenPause": false,
+        "fullscreenPauseOnlyActive": false,
+        "noAutoMute": false,
+        "noAudioProcessing": false,
+        "disableMouse": false
+      },
+      "3041683820": {
+        "silent": false,
+        "disableMouse": true
+      },
+      "3132826255": {
+        "silent": false,
+        "volume": 41
+      },
+      "3299228616": {
+        "disableParticles": false,
+        "disableMouse": true,
+        "fps": 31
+      }
+    },
+    "monitorPlaylists": {},
+    "playlistIntervalMinutes": 2,
+    "pauseOnPowerSaver": false
+  },
+  "wallpaperCarousel": {
+    "enabled": true,
+    "carouselMode": "infinite",
+    "overlayOpacity": 80,
+    "selectedScale": "1.10",
+    "borderWidth": 3
+  }
+}
