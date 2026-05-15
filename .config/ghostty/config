@@ -1,8 +1,8 @@
 # This is the configuration file for Ghostty.
 
-theme = tokyonight
-font-family = 0xProto Nerd Font
-font-size = 12
+theme =
+font-family = FiraCode Nerd Font Mono
+font-size = 13
 shell-integration = zsh
-background-opacity = 0.50
+background-opacity = 0.90
 background-blur = 1

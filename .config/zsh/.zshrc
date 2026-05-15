@@ -80,3 +80,11 @@ export HISTSIZE=10000
 export SAVEHIST=10000
 setopt EXTENDED_HISTORY
 setopt INC_APPEND_HISTORY
+
+# pnpm
+export PNPM_HOME="/home/wan/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
