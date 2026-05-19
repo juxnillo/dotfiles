@@ -1,0 +1,5 @@
+^screenshots$
+^.git$
+^LICENSE$
+^README.md$
+^.gitignore$
