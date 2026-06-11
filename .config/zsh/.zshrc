@@ -1,6 +1,11 @@
 # Exports
 export PATH="$PATH:/home/wan/.local/bin"
 export EXA_COLORS="di=35:ln=92:ex93:*.rs=31"
+export PNPM_HOME="/home/wan/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
 
 # Plugins Zap
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
@@ -55,16 +60,22 @@ alias vpnoff="sudo wg-quick down proton"
 alias ping="ping -c 5"
 alias fastping="ping -c 100 -s.2"
 
-# Load and initialise completion system
+# Compinit
 autoload -Uz compinit
-compinit
-compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump-"$ZSH_VERSION"
+local zcompdump="${XDG_CACHE_HOME:-$HOME/.cache}/zsh/zcompdump-${ZSH_VERSION}"
+if [[ -f "$zcompdump" && $(($(date +%s) - $(stat -c %Y "$zcompdump"))) -lt 86400 ]]; then
+  compinit -C -d "$zcompdump"
+else
+  compinit -d "$zcompdump"
+fi
 
 # Prompt Themes (clean-detailed, atomic, tokyonight_storm, tokyo, easy-term, gruvbox, broski)
 eval "$(oh-my-posh init zsh --config $HOME/.config/ohmyposh/broski-theme.omp.json)"
 
 # theFUCK
-eval $(thefuck --alias FUCK)
+if (( ${+commands[thefuck]} )); then
+  eval "$(thefuck --alias FUCK)"
+fi
 
 # Spicetify Update
 
@@ -81,10 +92,4 @@ export SAVEHIST=10000
 setopt EXTENDED_HISTORY
 setopt INC_APPEND_HISTORY
 
-# pnpm
-export PNPM_HOME="/home/wan/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
+

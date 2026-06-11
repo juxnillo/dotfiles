@@ -222,7 +222,7 @@
   "dankLauncherV2BorderColor": "primary",
   "dankLauncherV2ShowFooter": true,
   "dankLauncherV2UnloadOnClose": true,
-  "useAutoLocation": true,
+  "useAutoLocation": false,
   "weatherEnabled": true,
   "networkPreference": "auto",
   "iconTheme": "System Default",
@@ -534,7 +534,7 @@
       "innerPadding": 0,
       "bottomGap": 0,
       "transparency": 1,
-      "widgetTransparency": 0,
+      "widgetTransparency": 1,
       "squareCorners": true,
       "noBackground": false,
       "gothCornersEnabled": true,
@@ -559,7 +559,10 @@
       "shadowOpacity": 10,
       "shadowIntensity": 0,
       "shadowColorMode": "text",
-      "clickThrough": false
+      "clickThrough": false,
+      "maximizeWidgetIcons": false,
+      "maximizeWidgetText": false,
+      "removeWidgetPadding": false
     },
     {
       "id": "bar1769538911585",
