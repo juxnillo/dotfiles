@@ -91,7 +91,8 @@
     {
       "id": "brightnessSlider",
       "enabled": true,
-      "width": 50
+      "width": 50,
+      "deviceName": "ddc:i2c-5"
     },
     {
       "id": "wifi",
@@ -382,8 +383,8 @@
   "osdAlwaysShowValue": false,
   "osdPosition": 0,
   "osdVolumeEnabled": true,
-  "osdMediaVolumeEnabled": true,
-  "osdMediaPlaybackEnabled": true,
+  "osdMediaVolumeEnabled": false,
+  "osdMediaPlaybackEnabled": false,
   "osdBrightnessEnabled": true,
   "osdIdleInhibitorEnabled": true,
   "osdMicMuteEnabled": true,
