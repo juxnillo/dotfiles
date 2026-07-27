@@ -1,11 +1,15 @@
 # Exports
 export PATH="$PATH:/home/wan/.local/bin"
-export EXA_COLORS="di=35:ln=92:ex93:*.rs=31"
+export EZA_COLORS="di=35:ln=92:ex=93:*.rs=31"
 export PNPM_HOME="/home/wan/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
+
+# Sources
+source /usr/share/fzf/completion.zsh
+source /usr/share/fzf/key-bindings.zsh
 
 # Plugins Zap
 [ -f "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh" ] && source "${XDG_DATA_HOME:-$HOME/.local/share}/zap/zap.zsh"
