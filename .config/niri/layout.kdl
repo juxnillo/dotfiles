@@ -1,5 +1,5 @@
 layout {
-    gaps 6
+    gaps 12
     center-focused-column "on-overflow"
     // always-center-single-column
 
@@ -13,7 +13,7 @@ layout {
     }
 
     focus-ring {
-        on
+        off
         width 0.5
         // active-color "#A083F6"
         // inactive-color "#505050"

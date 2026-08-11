@@ -20,7 +20,7 @@ include "dms/colors.kdl"
 include "layout.kdl"
 include "autostart.kdl"
 include "binds.kdl"
-//include "animations.kdl"
+// include "animations.kdl"
 
 environment {
     DISPLAY ":0"
@@ -58,7 +58,7 @@ input {
 
 overview {
     zoom 0.70
-    backdrop-color "#1e1e2e"
+    backdrop-color "transparent"
 }
 
 hotkey-overlay {
@@ -87,9 +87,18 @@ window-rule {
 }
 
 window-rule {
-    geometry-corner-radius 9
+    geometry-corner-radius 25
     clip-to-geometry true
     draw-border-with-background false
+    shadow {
+        on
+        softness 40
+        spread 5
+        offset x=0 y=5
+        draw-behind-window true
+        color "#000000"
+        inactive-color "#00000064"
+    }
 }
 
 // Gestos
