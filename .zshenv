@@ -8,6 +8,7 @@ export PATH="$CARGO_HOME/bin:$PATH"
 export GOPATH="$XDG_DATA_HOME/go"
 export PATH="$GOPATH/bin:$PATH"
 export GNUPGHOME="$XDG_DATA_HOME/gnupg"
+export ANDROID_USER_HOME="$XDG_DATA_HOME"/android
 export XCURSOR_PATH="/usr/share/icons:$XDG_DATA_HOME/icons"
 export WINEPREFIX="$XDG_DATA_HOME/wine"
 export GTK2_RC_FILES="$XDG_CONFIG_HOME/gtk-2.0/gtkrc"

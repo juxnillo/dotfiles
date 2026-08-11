@@ -89,6 +89,9 @@ export PATH=$PATH:/home/wan/.spicetify
 # WGET
 alias  wget="wget --hsts-file=$XDG_DATA_HOME/wget-hsts"
 
+# Android
+alias adb= "HOME="$XDG_DATA_HOME"/android adb"
+
 # Histfile config
 export HISTFILE="$XDG_CONFIG_HOME/zsh/.zsh_history"
 export HISTSIZE=10000
