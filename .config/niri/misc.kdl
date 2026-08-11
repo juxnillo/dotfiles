@@ -1,0 +1,53 @@
+prefer-no-csd
+
+environment {
+    DISPLAY ":0"
+    XDG_CURRENT_DESKTOP "niri"
+    XDG_SESSION_TYPE "wayland"
+    MOZ_ENABLE_WAYLAND "1"
+    QT_QPA_PLATFORM "wayland"
+    ELECTRON_OZONE_PLATFORM_HINT "auto"
+}
+
+cursor {
+    xcursor-theme "Bibata-Modern-Ice"
+    xcursor-size 34
+}
+
+hotkey-overlay {
+    skip-at-startup
+}
+
+screenshot-path "~/Imágenes/Capturas de pantalla/Captura de pantalla %Y-%m-%d %H-%M-%S.png"
+
+input {
+    keyboard {
+        xkb {
+            layout "es"
+            options "grp:rctrl_rshift_toggle"
+        }
+        numlock
+    }
+    touchpad {
+        off
+    }
+
+    mouse {
+        // off
+        // natural-scroll
+        // accel-speed 0.2
+        // accel-profile "flat"
+        // scroll-method "no-scroll"
+    }
+
+    trackpoint {
+        off
+    }
+}
+
+gestures {
+    hot-corners{
+        off
+    }
+}
+

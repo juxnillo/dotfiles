@@ -65,7 +65,7 @@
   "blurBorderCustomColor": "#ffffff",
   "blurBorderOpacity": 0.35,
   "wallpaperFillMode": "Fill",
-  "blurredWallpaperLayer": false,
+  "blurredWallpaperLayer": true,
   "blurWallpaperOnOverview": false,
   "wallpaperBackgroundColorMode": "black",
   "wallpaperBackgroundCustomColor": "#000000",

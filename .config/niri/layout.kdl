@@ -38,3 +38,8 @@ layout {
         // bottom 64
     }
 }
+
+overview {
+    zoom 0.50
+    backdrop-color "#1e1e2e"
+}
